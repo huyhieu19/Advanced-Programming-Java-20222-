@@ -1,6 +1,28 @@
 package bai2;
 
-import java.io.EOFException;
+/*
+ * -----------------------------------------
+|            MyInteger                    |
+-----------------------------------------
+| - value: int                            |
+-----------------------------------------
+| + MyInteger(value: int)                  |
+| + getValue(): int                        |
+| + isEven(): boolean                      |
+| + isOdd(): boolean                       |
+| + isPrime(): boolean                     |
+| + isEven(myInteger: MyInteger): boolean  |
+| + isOdd(myInteger: MyInteger): boolean   |
+| + isPrime(myInteger: MyInteger): boolean |
+| + isEven(number: Integer): boolean       |
+| + isOdd(number: Integer): boolean        |
+| + isPrime(number: Integer): boolean      |
+| + equals(number: int): boolean           |
+| + equals(myInteger: MyInteger): boolean  |
+| + parseInt(chars: char[]): int           |
+| + parseInt(str: String): int             |
+-----------------------------------------
+ */
 
 public class MyInteger {
     private int integer;
@@ -57,14 +79,17 @@ public class MyInteger {
     }
 
     public static boolean isEven(MyInteger integer) {
-        return integer.GetValue() % 2 == 0;
+        return integer != null && integer.GetValue() % 2 == 0;
     }
 
     public static boolean isOdd(MyInteger integer) {
-        return integer.GetValue() % 2 != 0;
+        return integer != null && integer.GetValue() % 2 != 0;
     }
 
     public static boolean isPrime(MyInteger integer) {
+        if(integer == null){
+            return false;
+        }
         if (integer.GetValue() <= 1) {
             return false;
         }
@@ -83,21 +108,23 @@ public class MyInteger {
     }
 
     public boolean equals(MyInteger integer){
-        return (integer.GetValue() == this.integer);
+        return (integer != null && integer.GetValue() == this.integer);
     }
 
     public static int parseInt(char[] charArray) throws Exception{
 
-        String str = new String(charArray);
-        return MyInteger.parseInt(str);
+        int result = 0;
+        for (char c : charArray) {
+            if (!Character.isDigit(c)) {
+                throw new NumberFormatException("Invalid character: " + c);
+            }
+            result = result * 10 + Character.digit(c, 10);
+        }
+        return result;
 
     }
 
     public static int parseInt(String str) throws Exception{
-        try {
-            return Integer.parseInt(str);
-        } catch (Exception e) {
-            throw new Exception("Can't convert to int");
-        }
+        return parseInt(str.toCharArray());
     }
 }
