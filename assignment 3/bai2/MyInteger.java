@@ -4,9 +4,9 @@ package bai2;
  * -----------------------------------------
 |            MyInteger                    |
 -----------------------------------------
-| - value: int                            |
+| - integer: int                          |
 -----------------------------------------
-| + MyInteger(value: int)                  |
+| + MyInteger(integer: int)                |
 | + getValue(): int                        |
 | + isEven(): boolean                      |
 | + isOdd(): boolean                       |
