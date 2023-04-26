@@ -10,29 +10,33 @@ import java.util.Scanner;
 
 public class Sum {
     public static void main(String[] args) {
-        int num1, num2;
+        int num1 = 0, num2 = 0;
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter number 1: ");
-        try {
-            num1 = scanner.nextInt();
-            
-        } catch (InputMismatchException e) {
-            System.out.println("Please input integer.");
-            scanner.nextLine();
-            return;
+        boolean isNumber  = false;
+        while(!isNumber) {
+        	try {
+        		System.out.print("Enter number 1: ");
+        		num1 = scanner.nextInt();
+        		isNumber  = true;
+        	} catch (InputMismatchException e) {
+        		System.out.println("Please input integer.");
+        		scanner.nextLine();
+        	}
+        	
         }
- 
-        System.out.print("Enter number 2: ");
-        try {
-            num2 = scanner.nextInt();
-        } catch (InputMismatchException e) {
-            System.out.println("Please input integer.");
-            scanner.nextLine();
-            return;
-        }
- 
+        do {
+        	try {
+        		System.out.print("Enter number 2: ");
+        		num2 = scanner.nextInt();
+        		isNumber  = true;
+        	} catch (InputMismatchException e) {
+        		System.out.println("Please input integer.");
+        		scanner.nextLine();
+        		return;
+        	}
+        }while(!isNumber);
+        scanner.close();
         int sum = num1 + num2;
         System.out.println("Total of two numbers is: " + sum);
-        scanner.close();
     }
 }
