@@ -1,4 +1,4 @@
-package Week2;
+package Assignment1;
 //Bài 3: Viết chương trình cho một lớp Rectangle để biểu
 //diễn các hình chữ nhật
 //▪ Thuộc tính: width và height thuộc kiểu double

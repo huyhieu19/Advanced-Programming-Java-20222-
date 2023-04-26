@@ -1,4 +1,4 @@
-package Week2;
+package Assignment1;
 
 public class TV {
 	int channel;

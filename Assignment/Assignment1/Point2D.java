@@ -1,4 +1,4 @@
-package Week2;
+package Assignment1;
 // Bài 1: Xây dựng lớp Point2D để biểu diễn một điểm trong
 //	hệ tọa độ hai chiều. Thực hiện các phương thức trong biểu
 //	đồ lớp dưới đây. Viết chương trình sử dụng lớp Point2D

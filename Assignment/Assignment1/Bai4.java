@@ -1,4 +1,4 @@
-package Week1;
+package Assignment1;
 import java.util.Date;
 
 public class Bai4 {
