@@ -29,11 +29,11 @@ Viết chương trình đáp ứng các yêu cầu sau:   Tạo một mảng v�
 Định nghĩa lớp GeometricObject và lớp Circle trong biểu đồ UML dưới đây:
 ![alt](./Image/homework4.jpg)
 
-Định nghĩa thêm các lớp sau, là các lớp con của lớp GeometricObject:
-Lớp Rectangle có hai trường dữ liệu width, height; các phương thức tương tự lớp Circle
-Lớp Square có trường dữ liệu side; các phương thức tương tự lớp Circle
-Lớp GeometricObject bổ sung thêm phương thức sumArea(GeometricObject[] a) để tính tổng diện tích của các hình.
-•	Viết chương trình chính:
-    -	Tạo một mảng GeometricObject chứa 3 loại hình Circle, Rectangle, Square với dữ liệu từng hình cho trước
-    -	Hiển thị tổng diện tích các hình trong mảng
-    -	Hiển thị thông tin của từng hình trong mảng.
+    Định nghĩa thêm các lớp sau, là các lớp con của lớp GeometricObject:
+    Lớp Rectangle có hai trường dữ liệu width, height; các phương thức tương tự lớp Circle
+    Lớp Square có trường dữ liệu side; các phương thức tương tự lớp Circle
+    Lớp GeometricObject bổ sung thêm phương thức sumArea(GeometricObject[] a) để tính tổng diện tích của các hình.
+    •	Viết chương trình chính:
+        -	Tạo một mảng GeometricObject chứa 3 loại hình Circle, Rectangle, Square với dữ liệu từng hình cho trước
+        -	Hiển thị tổng diện tích các hình trong mảng
+        -	Hiển thị thông tin của từng hình trong mảng.
