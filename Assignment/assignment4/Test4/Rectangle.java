@@ -42,7 +42,7 @@ public class Rectangle extends GeometricObject{
     }
 
     public void printRectangle(){
-        System.out.println("Rectangle: " +
+        System.out.println("We are have a Rectangle: " +
                 "\nWith: " + width +
                 "\nHeight: " + height);
     }

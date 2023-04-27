@@ -1,0 +1,5 @@
+Đoạn mã model = Sequential() tạo một đối tượng mô hình tuần tự (Sequential) trong TensorFlow để xây dựng một mạng nơ-ron.
+
+Một mô hình tuần tự là một mô hình mạng nơ-ron trong đó các layer được xếp chồng lên nhau theo một thứ tự tuần tự. Mỗi layer trong mạng nơ-ron sẽ nhận đầu vào từ layer trước đó và truyền đầu ra cho layer tiếp theo.
+
+Sau khi tạo đối tượng Sequential, ta có thể thêm các layer vào mô hình bằng cách sử dụng các phương thức như add(), Dense(), Conv2D(), và nhiều phương thức khác để xây dựng kiến trúc mạng nơ-ron.
