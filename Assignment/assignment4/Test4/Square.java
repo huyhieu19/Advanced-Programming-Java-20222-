@@ -28,7 +28,7 @@ public class Square extends GeometricObject{
         return 4*slide;
     }
     public void printSquare(){
-        System.out.println("Square: " +
+        System.out.println("We are have a Square: " +
                 "\nSlide: " +slide);
     }
 }

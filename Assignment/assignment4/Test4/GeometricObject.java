@@ -1,5 +1,7 @@
 package assignment4.Test4;
 
+import java.awt.*;
+import java.sql.SQLOutput;
 import java.util.Date;
 
 public class GeometricObject {
@@ -39,10 +41,18 @@ public class GeometricObject {
 		return "Color : " + color + "\nFilled : " + filled;
 	}
 
-	public double sumArea(GeometricObject[] a){
+	public static double sumArea(GeometricObject[] a){
 		double sum = 0;
 		for (GeometricObject x: a) {
-
+			if(x.getClass() == Square.class){
+				sum += ((Square) x).getArea();
+			}else if(x.getClass() == Rectangle.class){
+				sum += ((Rectangle) x).getArea();
+			}else if(x.getClass() == Circle.class){
+				sum += ((Circle) x).getArea();
+			}else{
+				System.out.println("Lớp con không đúng kiểu: Đã có lỗi trong khi tạo mảng!!!");
+			}
 		}
 		return sum;
 	}
