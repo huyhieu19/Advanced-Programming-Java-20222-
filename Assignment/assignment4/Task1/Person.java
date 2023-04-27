@@ -1,3 +1,23 @@
+/*
+*       Person
+* --------------------------------
+* - name: String
+* - address: String
+* - phoneNumber: String
+* - email: String
+* ---------------------------------
+* + getName(): string
+* + getAddress(): string
+* + getPhoneNumber(): string
+* + getEmail(): string
+* + setName(): void
+* + setAddress(): void
+* + setPhoneNumber(): void
+* + setEmail(): void
+* + toString(): String
+* */
+
+
 
 public class Person{
     private String name;
