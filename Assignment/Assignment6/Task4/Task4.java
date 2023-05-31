@@ -16,11 +16,11 @@ public class Task4 {
             String line;
             while((line = reader.readLine()) != null){
                 String[] data = line.split("\\s+");
-                String fisrtName1 = data[0].trim();
+                String firstName1 = data[0].trim();
                 String lastName1 = data[1].trim();
                 String rank1 = data[2].trim();
                 Double salary1 = Double.parseDouble(data[3].trim());
-                Employee employee = new Employee(fisrtName1, lastName1, rank1, salary1);
+                Employee employee = new Employee(firstName1, lastName1, rank1, salary1);
                 employees.add(employee);
 
             }
@@ -48,6 +48,35 @@ public class Task4 {
             this.rank = rank;
             this.salary = salary;
         }
+
+        public void setFirstName(String firstName) {
+            this.firstName = firstName;
+        }
+
+        public void setLastName(String lastName) {
+            this.lastName = lastName;
+        }
+
+        public void setRank(String rank) {
+            this.rank = rank;
+        }
+
+        public void setSalary(Double salary) {
+            this.salary = salary;
+        }
+
+        public String getFirstName() {
+            return firstName;
+        }
+
+        public String getLastName() {
+            return lastName;
+        }
+
+        public String getRank() {
+            return rank;
+        }
+
         public double getSalary() {
             return salary;
         }
