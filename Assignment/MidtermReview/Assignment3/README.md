@@ -1,39 +1,41 @@
-1. Thiết kế một lớp có tên Person với các thuộc tính họ tên (name), (địa chỉ) address, số điện thoại (phoneNumber), và địa chỉ email (email).
+1. Thiết kế một lớp có tên Fan để đại diện cho một chiếc quạt. Lớp chứa:
 
-Student và Employee là hai lớp con của Person.
+- Ba hằng số SLOW, MEDIUM và FAST với các giá trị 1, 2 và 3 để biểu thị tốc độ quạt.
 
-Student có thêm thuộc tính trạng thái (status). Giá trị của status có thể rơi vào một trong 4 trường hợp sau: 1=freshman, 2=sophomore, 3=junior, 4= senior).
+- Trường dữ liệu speed (private, int) chứa tốc độ của quạt (mặc định là SLOW).
 
-Employee có thêm các thuộc tính: văn phòng (office), lương (salary), và ngày bắt đầu vào làm (startDate).
+- Trường dữ liệu on (private, boolean) chỉ định quạt có bật hay không (giá trị mặc định là false).
 
-Lecturer và Staff là các lớp con của Employee.
+- Trường dữ liệu radius (private, double) chứa bán kính của quạt (mặc định là 5).
 
-Lecturer có thêm thuộc tính: số giờ hành chính (officeHours), chức danh (title)
+- Trường dữ liệu color (string) chứa màu của quạt (mặc định là màu xanh lam).
 
-Staff có thêm thuộc tính cấp bậc (rank)
+- Các phương thức get, set cho cả bốn trường dữ liệu.
 
-Thực hiện các hàm tạo mặc định, hàm tạo có đối, các phương thức get/set để lấy/gán các dữ liệu trong tất cả các lớp.
+- Phương thức khởi tạo không đối số tạo ra một quạt với các giá trị mặc định.
 
-Ghi đè phương thức toString trong mỗi lớp để hiển thị thông tin của các đối tượng. Lưu ý, thuộc tính status hiển thị dưới dạng chuỗi “freshman”/ “sophomore”/ “junior”/ “senior” thay vì các số nguyên.
+- Phương thức có tên toString () trả về một chuỗi ký tự mô tả quạt. Nếu quạt đang bật, phương thức trả về tốc độ, màu sắc và bán kính của quạt trong một chuỗi kết hợp. Nếu quạt không được bật, phương thức trả về màu và bán kính của quạt cùng với chuỗi “quạt tắt” trong một chuỗi kết hợp.
 
-Vẽ biểu đồ UML cho các lớp và triển khai chúng. Viết chương trình chính sử dụng các lớp.
+Vẽ biểu đồ UML cho lớp sau đó triển khai lớp. Viết chương trình thử nghiệm tạo hai đối tượng Fan. Gán tốc độ tối đa, bán kính 10, màu vàng và được bật cho đối tượng đầu tiên. Gán tốc độ trung bình, bán kính 5, màu xanh lam và bị tắt cho đối tượng thứ hai. Hiển thị các đối tượng bằng cách gọi phương thức toString. (9.8)
 
-2. Viết chương trình nhắc người dùng đọc hai số nguyên và hiển thị tổng của chúng. Chương trình của bạn sẽ nhắc người dùng đọc lại số nếu đầu vào không chính xác. (Gợi ý:sử dụng lớp ngoại lệ InputMismatchException)
-3. Viết chương trình đáp ứng các yêu cầu sau: Tạo một mảng với 100 số nguyên được chọn ngẫu nhiên. Nhắc người dùng nhập chỉ số của mảng, sau đó hiển thị giá trị phần tử tương ứng. Nếu chỉ mục được chỉ định nằm ngoài giới hạn, hiển thị thông báo "Ngoài giới hạn". (Gợi ý: sử dụng lớp ngoại lệ ArrayIndexOutOfBoundsException)
-4. Định nghĩa lớp GeometricObject và lớp Circle trong biểu đồ UML dưới đây:
-![img.png](img.png)
-   Định nghĩa thêm các lớp sau, là các lớp con của lớp GeometricObject:
+2. Thiết kế một lớp có tên MyInteger. Lớp chứa:
 
-Lớp Rectangle có hai trường dữ liệu width, height; các phương thức tương tự lớp Circle
+- Trường dữ liệu value (int) lưu trữ giá trị một số nguyên
 
-Lớp Square có trường dữ liệu side; các phương thức tương tự lớp Circle
+- Phương thức khởi tạo có đối.
 
-Lớp GeometricObject bổ sung thêm phương thức sumArea(GeometricObject[] a) để tính tổng diện tích của các hình.
+- Phương thức getValue() trả về giá trị.
 
-• Viết chương trình chính:
+- Các phương thức isEven (), isOdd () và isPrime () trả về true nếu giá trị trong đối tượng này tương ứng là chẵn, lẻ hoặc nguyên tố.
 
-- Tạo một mảng GeometricObject chứa 3 loại hình Circle, Rectangle, Square với dữ liệu từng hình cho trước
+- Các phương thức tĩnh isEven (int), isOdd (int) và isPrime (int) trả về true nếu giá trị được được truyền vào hàm tương ứng là chẵn, lẻ hoặc nguyên tố.
 
-- Hiển thị tổng diện tích các hình trong mảng
+- Các phương thức tĩnh isEven (MyInteger), isOdd (MyInteger) và isPrime (MyInteger) trả về true nếu đối tượng được truyền vào hàm tương ứng là chẵn, lẻ hoặc nguyên tố.
 
-- Hiển thị thông tin của từng hình trong mảng.
+- Các phương equals (int) và equals (MyInteger) trả về true nếu giá trị trong đối tượng này bằng giá trị được truyền vào hàm.
+
+- Phương thức tĩnh parseInt (char []) chuyển đổi một mảng các ký tự số thành giá trị int.
+
+- Phương thức tĩnh parseInt (String) chuyển đổi một chuỗi thành giá trị int.
+
+Vẽ biểu đồ UML cho lớp sau đó triển khai lớp. Viết một chương trình khách kiểm tra tất cả các phương thức trong lớp. (10.3) 
