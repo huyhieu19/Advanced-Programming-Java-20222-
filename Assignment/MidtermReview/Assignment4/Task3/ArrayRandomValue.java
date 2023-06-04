@@ -1,4 +1,4 @@
-package MidtermReview.Assignment4.Task2;
+package MidtermReview.Assignment4.Task3;
 
 import java.util.Random;
 import java.util.Scanner;
