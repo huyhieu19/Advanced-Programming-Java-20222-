@@ -26,10 +26,13 @@ public class Point2D {
         return "Toa do: (x, y) = (" + getX() + "," + getY() + ")" +"Distance: x= 3 va y= 4 :" +  Distance(new Point2D(3, 4));
     }
     public static void main(String[] args){
+        System.out.println("Task1");
         Point2D point = new Point2D(3, 4);
         System.out.println("X : " + point.getX());
         System.out.println("Y : " + point.getY());
         System.out.println("Distance : " + point.Distance(1, 2));
         System.out.println("Distance : " + point.Distance(new Point2D(1, 2)));
+
+
     }
 }
