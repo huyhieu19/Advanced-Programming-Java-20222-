@@ -25,4 +25,10 @@ public class Point2D {
     public String toString(){
         return "Toa do: (x, y) = (" + getX() + "," + getY() + ")" +"Distance: x= 3 va y= 4 :" +  Distance(new Point2D(3, 4));
     }
+    public static void main(String[] args){
+        Point2D point = new Point2D(3, 4);
+        System.out.println("X : " + point.getX());
+        System.out.println("Y : " + point.getY());
+        System.out.println("Distance : " + point.Distance(point));
+    }
 }
