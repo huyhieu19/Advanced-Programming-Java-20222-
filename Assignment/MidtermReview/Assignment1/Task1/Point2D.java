@@ -10,10 +10,10 @@ public class Point2D {
     }
     // Distance
     public double Distance(double x, double y){
-        return (Math.sqrt(x*x + y*y));
+        return (Math.sqrt(Math.pow(this.x - x, 2) + Math.pow(this.y - y, 2)));
     }
     public double Distance(Point2D point){
-        return (Math.sqrt(Math.pow(point.x, 2) + Math.pow(point.y, 2)));
+        return (Math.sqrt(Math.pow(this.x - point.x, 2) + Math.pow(this.y - point.y, 2)));
     }
     public double getX(){
         return x;
@@ -29,6 +29,7 @@ public class Point2D {
         Point2D point = new Point2D(3, 4);
         System.out.println("X : " + point.getX());
         System.out.println("Y : " + point.getY());
-        System.out.println("Distance : " + point.Distance(point));
+        System.out.println("Distance : " + point.Distance(1, 2));
+        System.out.println("Distance : " + point.Distance(new Point2D(1, 2)));
     }
 }
