@@ -1,5 +1,4 @@
 package MidtermReview.Assignment1.Task2;
-
 public class TV {
     int channel = 1;
     int volumeLevel = 1;
@@ -54,9 +53,8 @@ public class TV {
         }
     }
 
-    public void main(String[] args){
+    public static void main(String[] args){
         TV tv = new TV();
-
     }
 
 }
