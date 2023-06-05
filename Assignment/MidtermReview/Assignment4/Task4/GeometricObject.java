@@ -33,4 +33,20 @@ public class GeometricObject {
     public String toString(){
         return "Geometric: filter: " + this.filter + ", Color: " + this.color + ", DateCreated: " + this.dateCreated;
     }
+
+    public static double  sumArea(GeometricObject[] geometricObjects){
+        double sum = 0;
+        for(GeometricObject geometricObject : geometricObjects){
+            if(geometricObject.getClass() == Circle.class){
+                sum += ((Circle) geometricObject).getArea();
+            }
+            else if(geometricObject.getClass() == Square.class){
+                sum += ((Square) geometricObject).getArea();
+            }
+            else if(geometricObject.getClass() == Rectangle.class){
+                sum += ((Rectangle) geometricObject).getArea();
+            }
+        }
+        return sum;
+    }
 }
