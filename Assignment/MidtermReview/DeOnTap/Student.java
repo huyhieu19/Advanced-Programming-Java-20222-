@@ -39,6 +39,11 @@ public class Student {
     public void setStudentId(String studentId) {
         this.studentId = studentId;
     }
+    @Override
+    public String toString() {
+        return "Student@id=" + studentId + ",name=" + name
+                + ",avgScore=" + avgScore;
+    }
 }
 
 
