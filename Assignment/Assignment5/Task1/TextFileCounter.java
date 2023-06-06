@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class TextFileCounter {
+public class  TextFileCounter {
     public static void main(String[] args){
         // When running the program, please change the file path
         String filePath = "D:\\Semester 20222\\1. Advanced Programming\\3. Projects\\Advanced Programming Assignments\\Assignment\\Assignment5\\Task1\\task1.txt";
