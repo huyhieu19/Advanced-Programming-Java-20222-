@@ -19,7 +19,7 @@ public class Circle extends GeometricObject{
         this.radius = radius;
     }
     public double getArea(){
-        return 2*3.14*Math.pow(radius, 2);
+        return 3.14*Math.pow(radius, 2);
     }
     public double getPerimeter(){
         return 2*3.14*this.radius;
