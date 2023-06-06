@@ -44,25 +44,6 @@ public class Task7 {
                     }
                 }
                 if(direction==2){
-//                    BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName));
-//                    String line;
-//                    while((line = bufferedReader.readLine()) != null){
-//                        int totalSalaryAssistant = 0;
-//                        int totalSalaryTeacher = 0;
-//                        int totalSalaryAssociate = 0;
-//
-//                            if(line.contains("assistant")) {
-//
-//                            }
-//                            else if(line.contains("teacher")){
-//                                return ThreadLocalRandom.current().nextInt(60000, 110000 + 1);
-//                            }
-//                            else if(line.contains("associate")){
-//                                return ThreadLocalRandom.current().nextInt(75000, 130000 + 1);
-//                                }
-//                            default:
-//                                return -1;
-//                    }
                     try {
                         // Đọc dữ liệu từ tệp Salary.txt
                         Scanner scannerfile = new Scanner(new File(fileName));
