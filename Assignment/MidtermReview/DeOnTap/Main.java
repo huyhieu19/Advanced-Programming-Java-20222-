@@ -6,7 +6,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        List<Student> studentList = new ArrayList<>(5);
+        List<Student> studentList = new ArrayList<Student>(5);
         Random rd = new Random();
             studentList.add(new Student("HuyHieu" + rd.nextInt(100), 10* rd.nextDouble(), "Hust2019" + Math.round((1000*(1+rd.nextDouble(6))))));
             studentList.add(new Student("Nam" + rd.nextInt(100), 10* rd.nextDouble(), "Hust2019" + Math.round((1000*(1+rd.nextDouble(6))))));
