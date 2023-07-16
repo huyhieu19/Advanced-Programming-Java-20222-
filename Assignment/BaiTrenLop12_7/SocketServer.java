@@ -19,14 +19,15 @@ public class SocketServer {
         DataInputStream inputStream = null;
         try{
             // create server socket
-            serverSocket = new ServerSocket(8000);
+            serverSocket = new ServerSocket(9000);
             // accept request
             socket = serverSocket.accept();
             // read input from client
             inputStream = new DataInputStream(socket.getInputStream());
-            // send area to cliet
+            // send area to client
             outputStream = new DataOutputStream(socket.getOutputStream());
             while(true) {
+                new Thread(new ClientHandler(socket)).start();
                 double radius = inputStream.readDouble();
                 double area = Math.PI * radius * radius;
                 outputStream.writeDouble(area);

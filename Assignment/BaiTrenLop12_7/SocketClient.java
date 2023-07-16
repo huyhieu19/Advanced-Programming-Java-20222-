@@ -8,7 +8,7 @@ import java.net.Socket;
 //
 // Lập client để gửi bán kính cho server
 //
-public class ClientServer {
+public class SocketClient {
     public static void main(String[] args) {
         Socket socket = null;
         double radius = 1.0;
@@ -18,7 +18,7 @@ public class ClientServer {
         int count = 0;
 
         try{
-            socket = new Socket("localhost", 8000);
+            socket = new Socket("localhost", 9000);
             inputStream = new DataInputStream(socket.getInputStream());
             outputStream = new DataOutputStream(socket.getOutputStream());
             while(true){
